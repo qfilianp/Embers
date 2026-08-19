@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+head>
+    <meta charset="utf-8">
+    <title>Offline Ruffle Test</title>
+    <!-- Load local ruffle.js -->
+    <script src="ruffle.js"></script>
+</head>
+<body>
+    <!-- Container for your flash content -->
+    <div id="player-container"></div>
+
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            "autoplay": "on",
+            "unMutedSwf": "visible"
+        };
+
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("player-container");
+            
+            container.appendChild(player);
+            
+            // Load your local swf file
+            player.load("your-game-file.swf");
+        });
+    </script>
+</body>
+</html>
