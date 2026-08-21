@@ -1,3 +1,5 @@
+This is local Ruffle flash player that plays on a webrowser
+
 How to start a local server using powershell
 open powershell
 use command: cd "C:\path\to\your\Embers"
