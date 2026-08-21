@@ -1,4 +1,4 @@
-This is local Ruffle flash player that plays on a webrowser
+This is local Ruffle flash player that plays on a web browser
 
 How to start a local server using powershell
 open powershell
