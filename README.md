@@ -11,7 +11,6 @@ How to start a local server using Powershell:
 
 Right Click the ps1 file the click on "Run with Powershell"
 
-
 or
 
 open powershell
